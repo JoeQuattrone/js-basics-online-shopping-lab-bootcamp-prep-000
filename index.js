@@ -67,6 +67,7 @@ function removeFromCart(item) {
    return "That item is not in your cart.";
 }
 
+<<<<<<< HEAD
  function placeOrder(cardNumber) {
     
    if (cardNumber) {
@@ -79,6 +80,20 @@ function removeFromCart(item) {
 } 
 
 
+=======
+function placeOrder(cardNumber) {
+  var totalCart = total()
+  for (let i = 0; i < cart.length; i++) {
+    
+    if (cardNumber == null) {
+      return "Sorry, we don\'t have a credit card on file for you.";}
+      
+   else{
+    cart.length = 0; 
+    return `Your total cost is $${totalCart}, which will be charged to the card ${cardNumber}.`}
+  }     
+}
+>>>>>>> 4b3133bdaf68318c54a2e3493102d02874004bcd
 
 
 
